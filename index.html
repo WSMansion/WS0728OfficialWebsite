@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>茜楠公馆 | ws0728.top</title>
+  <meta name="description" content="茜楠公馆 —— 一间由爱出发的独立工作室，记录我们共同创造的每一步。">
+  <meta name="keywords" content="茜楠公馆, 围棋教练, 吱星, 甘丸, 独立工作室">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-qian">茜</span><span class="logo-nan">楠</span><span class="logo-suffix">公馆</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#projects">工作室作品</a></li>
+        <li><a href="#gallery">画廊</a></li>
+        <li><a href="#timeline">我们的历程</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 英雄区 -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Since 2023.07.28</div>
+      <h1 class="hero-title">
+        <span class="title-line title-line-1">茜楠公馆</span>
+        <span class="title-line title-line-2">Qiannan Studio</span>
+      </h1>
+      <p class="hero-subtitle">一间由爱出发的独立工作室<br>用代码与画笔，记录我们共同创造的每一步</p>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">了解我们</a>
+        <a href="#projects" class="btn btn-outline">查看作品</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>向下探索</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">关于我们</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal-up" data-delay="0">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+          </div>
+          <h3>他 · 开发者</h3>
+          <p>游戏与产品开发者，用代码构建世界。<br>从围棋的黑白之间到星辰大海，始终在创造中前行。</p>
+          <div class="about-card-tag">Code & Create</div>
+        </div>
+
+        <div class="about-card about-card-center reveal-up" data-delay="150">
+          <div class="about-card-icon heart-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3>茜楠公馆</h3>
+          <p>2023年7月28日，两颗心相遇。<br>从此，代码遇上画笔，逻辑邂逅浪漫。<br>这里是我们共同创造的小天地。</p>
+          <div class="about-card-date">2023.07.28</div>
+        </div>
+
+        <div class="about-card reveal-up" data-delay="300">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>她 · 米画师 · 甘丸</h3>
+          <p>米画师平台创作者，以画笔勾勒万象。<br>用色彩与线条赋予角色生命，让想象触手可及。</p>
+          <div class="about-card-tag">Art & Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作室作品 -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Works</span>
+        <h2 class="section-title">工作室作品</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 围棋教练 -->
+        <div class="project-card reveal-left">
+          <div class="project-visual">
+            <div class="project-icon-wrap go-theme">
+              <div class="go-board">
+                <div class="go-stone black" style="top:20%;left:30%"></div>
+                <div class="go-stone white" style="top:40%;left:50%"></div>
+                <div class="go-stone black" style="top:60%;left:70%"></div>
+                <div class="go-stone white" style="top:35%;left:25%"></div>
+                <div class="go-stone black" style="top:55%;left:45%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-badge">产品</span>
+            <h3>围棋教练</h3>
+            <p>一款专注于围棋教学与训练的应用。以智能化的方式，让围棋学习变得更加高效与有趣，从入门到进阶，陪伴每一步成长。</p>
+            <ul class="project-features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                智能教学系统
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                循序渐进的课程
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                实战对弈训练
+              </li>
+            </ul>
+            <a href="#" class="project-link">了解更多 →</a>
+          </div>
+        </div>
+
+        <!-- 吱星 -->
+        <div class="project-card reveal-right">
+          <div class="project-info">
+            <span class="project-badge badge-alt">产品</span>
+            <h3>吱星</h3>
+            <p>一颗正在升起的新星。吱星是工作室打造的另一款创意产品，以独特的视角和玩法，为用户带来全新的体验。</p>
+            <ul class="project-features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                创新玩法
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                精美画面
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                持续更新中
+              </li>
+            </ul>
+            <a href="#" class="project-link">了解更多 →</a>
+          </div>
+          <div class="project-visual">
+            <div class="project-icon-wrap star-theme">
+              <div class="star-field">
+                <div class="star s1"></div>
+                <div class="star s2"></div>
+                <div class="star s3"></div>
+                <div class="star s4"></div>
+                <div class="star s5"></div>
+                <div class="star-main"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 画廊 -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">甘丸的画廊</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">米画师 · 甘丸 —— 用画笔捕捉灵感的瞬间</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-up" data-delay="0">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 01</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-tall reveal-up" data-delay="100">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 02</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="200">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 03</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-wide reveal-up" data-delay="100">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 04</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="200">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 05</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="300">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>作品 06</span>
+          </div>
+        </div>
+      </div>
+      <p class="gallery-hint">将甘丸的作品图片放入 <code>assets/images/</code> 文件夹，即可替换展示</p>
+    </div>
+  </section>
+
+  <!-- 历程时间线 -->
+  <section class="timeline" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Journey</span>
+        <h2 class="section-title">我们的历程</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline-track">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2023.07.28</div>
+            <h3>相遇 · 相爱</h3>
+            <p>两颗心在这一天相遇，从此开始了一段美好的旅程。代码与画笔，因爱而交织。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2023</div>
+            <h3>茜楠公馆 · 成立</h3>
+            <p>以彼此名字为灵感，「茜楠公馆」工作室诞生。一个属于我们的创作空间。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">开发中</div>
+            <h3>围棋教练 · 启动</h3>
+            <p>工作室第一款产品「围棋教练」进入开发，将围棋的智慧通过技术传递给更多人。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">开发中</div>
+            <h3>吱星 · 启动</h3>
+            <p>工作室第二款产品「吱星」正式立项，一颗新星正在酝酿。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot timeline-dot-future"></div>
+          <div class="timeline-card timeline-card-future">
+            <div class="timeline-date">未来</div>
+            <h3>更多故事 · 待续</h3>
+            <p>每一天都是新的篇章，更多精彩正在路上……</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo"><span class="logo-qian">茜</span><span class="logo-nan">楠</span><span class="logo-suffix">公馆</span></span>
+          <p>一间由爱出发的独立工作室</p>
+        </div>
+        <div class="footer-links">
+          <h4>作品</h4>
+          <ul>
+            <li><a href="#projects">围棋教练</a></li>
+            <li><a href="#projects">吱星</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>创作者</h4>
+          <ul>
+            <li><a href="#gallery">甘丸 · 米画师</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>链接</h4>
+          <ul>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#timeline">历程</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 - <span id="currentYear"></span> 茜楠公馆 · ws0728.top</p>
+        <p class="footer-heart">Made with <span class="heart-beat">❤</span> since 2023.07.28</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
