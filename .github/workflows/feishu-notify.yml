@@ -1,4 +1,4 @@
-name: Feishu Push Notification
+name: Feishu Push Notify
 
 on:
   push:
