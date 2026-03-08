@@ -106,6 +106,37 @@
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
 
+  // --- 画廊灯箱 ---
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+
+  if (lightbox && lightboxImg) {
+    document.querySelectorAll('.split-gallery-item img').forEach(function (img) {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function () {
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    lightbox.addEventListener('click', function () {
+      closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  }
+
   // --- 首屏加载动画完成后隐藏滚动提示 ---
   var scrollHint = document.querySelector('.hero-scroll-hint');
   if (scrollHint) {
