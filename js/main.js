@@ -106,6 +106,19 @@
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
 
+  // --- 画廊图片加载优化 ---
+  document.querySelectorAll('.split-gallery-item img').forEach(function (img) {
+    function onLoaded() {
+      img.style.animation = 'none';
+      img.style.opacity = '1';
+    }
+    if (img.complete) {
+      onLoaded();
+    } else {
+      img.addEventListener('load', onLoaded);
+    }
+  });
+
   // --- 画廊灯箱 ---
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
