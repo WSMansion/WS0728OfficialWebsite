@@ -1,0 +1,22 @@
+name: Feishu Push Notification
+
+on:
+  push:
+    branches: ['*']
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Feishu Notification
+        run: |
+          REPO_NAME="${{ github.event.repository.name }}"
+          BRANCH="${{ github.ref_name }}"
+          COMMIT_MSG=$(echo '${{ github.event.head_commit.message }}' | head -1)
+          PUSHER="${{ github.actor }}"
+          COMMIT_URL="${{ github.event.head_commit.url }}"
+
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d "{\"msg_type\":\"interactive\",\"card\":{\"header\":{\"title\":{\"tag\":\"plain_text\",\"content\":\"📦 代码推送通知\"},\"template\":\"blue\"},\"elements\":[{\"tag\":\"div\",\"fields\":[{\"is_short\":true,\"text\":{\"tag\":\"lark_md\",\"content\":\"**仓库：**${REPO_NAME}\"}},{\"is_short\":true,\"text\":{\"tag\":\"lark_md\",\"content\":\"**分支：**${BRANCH}\"}},{\"is_short\":true,\"text\":{\"tag\":\"lark_md\",\"content\":\"**推送者：**${PUSHER}\"}},{\"is_short\":false,\"text\":{\"tag\":\"lark_md\",\"content\":\"**提交：**${COMMIT_MSG}\"}}]},{\"tag\":\"action\",\"actions\":[{\"tag\":\"button\",\"text\":{\"tag\":\"plain_text\",\"content\":\"查看提交\"},\"url\":\"${COMMIT_URL}\",\"type\":\"primary\"}]}]}}" \
+            "${{ secrets.FEISHU_WEBHOOK }}"
