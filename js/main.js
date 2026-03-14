@@ -107,9 +107,8 @@
   window.addEventListener('scroll', updateActiveNav, { passive: true });
 
   // --- 画廊图片加载优化 ---
-  document.querySelectorAll('.split-gallery-item img').forEach(function (img) {
+  document.querySelectorAll('.gallery-scroll-item img').forEach(function (img) {
     function onLoaded() {
-      img.style.animation = 'none';
       img.style.opacity = '1';
     }
     if (img.complete) {
@@ -124,7 +123,7 @@
   var lightboxImg = document.getElementById('lightboxImg');
 
   if (lightbox && lightboxImg) {
-    document.querySelectorAll('.split-gallery-item img').forEach(function (img) {
+    document.querySelectorAll('.gallery-scroll-item img').forEach(function (img) {
       img.style.cursor = 'zoom-in';
       img.addEventListener('click', function () {
         lightboxImg.src = this.src;
